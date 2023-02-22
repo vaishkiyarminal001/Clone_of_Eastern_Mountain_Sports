@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eastern Climbing Sports | Your go-to for gear, guidance, and having a good time outside since 1967.</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="/image/Screenshot (619).png">
+
+    
+   
+    
+    <style>
+
+
+        *{
+            font-family: Montserrat-Web, Montserrat, -apple-system, BlinkMacSystemFont, San Francisco, Roboto, Segoe UI, Helvetica Neue, sans-serif; 
+
+            margin: 0px;         
+        }
+    
+        #head{
+            display: flex;
+            width: 100%;
+            height: 30px;
+            /* border: 1px solid red; */
+            background-color: #313f35;
+            color: #a1a3a2;
+            justify-content: space-between;
+        }
+
+        #head>div:nth-child(1){
+            /* border: 1px solid red; */
+            width: 15%;
+            margin: auto;
+            text-align:center;
+            font-size: 15px;
+        }
+
+        #head>div:nth-child(2){
+            display: flex;
+            /* border: 1px solid red; */
+            width: 20%;
+            text-align: center;
+            margin-bottom: 2%;
+            font-size: 15px;
+            margin: auto;
+            justify-content: space-around;
+        }
+
+        #head2{
+            width: 100%;
+            height: 80px;
+            /* border: 1px solid red; */
+            background-color: #edf0ee;
+            
+        }
+
+        #head2>div{
+            display: flex;
+            width:80%;
+
+        }
+
+        #head2>div{
+            margin: auto;
+            justify-content: space-around;
+            
+        }
+
+        #head2>div:nth-child(1){
+            height: 100%;
+
+        }
+
+        #head2>div>div>img:nth-child(1){
+            /* border: 1px solid red; */
+            width:100%;
+            height: 100%;    
+        }
+
+        #head2>div>div:nth-child(2){
+            /* border: 1px solid red; */
+            width: 40%;
+            height: 100%;
+
+        }
+
+        #head2>div>div>input{
+            border: 1px solid black;
+            width:90%;
+            height: 50%;
+            margin-top: 2%;
+            justify-content: space-around;
+        }
+
+    
+
+        #head2>div>div:nth-child(3){
+            display: flex;
+            border: 1px solid black;
+            width: 15%;
+            height: 60%; 
+            text-align: center;
+            margin: 0px; 
+            margin-top: 15px;  
+            justify-content: space-around;
+        }
+
+        #head2>div>div>i{
+            /* border: 1px solid red; */
+            width: 8%;
+            height: 0px;
+            margin-top: 2%;
+        }
+        #head2>div>div:nth-child(4){
+            display: flex;
+            border: 1px solid black;
+            width: 5%;
+            height: 50%;
+            color: black;
+            text-align: center;
+            margin: 0px; 
+            margin-top: 15px;
+            justify-content: space-around;
+        }
+
+        #head2>div>div>i{
+            width: 8%;
+            margin-top: 2%;
+        }
+
+        #menu-bar{
+            display: none;
+            
+        }
+
+        #nav > label{
+            font-size: 20px;
+            cursor: pointer;
+            display: none;
+
+        }
+
+        #nav{
+            /* border: 1px solid red; */
+            width: 100%;
+            height: 35px;   
+            
+        }
+
+        #nav>ul{
+            width:80%;
+            height: 35px;
+            /* border:1px solid red; */
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+            
+        }
+
+        #nav>ul>li{
+            font-size: 19px;
+            font-weight:normal;
+            margin-top: .5%;
+            
+        }
+
+        #nav>ul>li:hover{
+            text-decoration: underline;
+           
+        }
+
+        #nav>ul>li>ul{
+            position:absolute;
+            left: 0;
+            width: 200px;
+            background-color: white;
+            display: none;
+
+        }
+
+        #nav>ul>li>ul>li{
+            width: 100%;
+
+        }
+
+   /* hover part */
+
+        #nav>ul>li:hover>ul{ 
+          display: initial; 
+          display: flex; 
+          width:100%;
+          /* border: 1px solid red;  */
+          text-decoration: none; 
+
+        }
+        #nav>ul>li>ul>li:hover>ul{
+          display: initial;
+          text-decoration: none;
+          
+        }
+
+       
+
+        #banner{
+            /* border: 1px solid red; */
+            width: 85%;
+            margin: auto;
+            margin-top: 2%;
+            
+        }
+
+        #banner>div{
+            /* border: 1px solid red; */
+            margin-top: 2%;
+            /* width: 100%; */
+        }
+
+        #banner>div:nth-child(1){
+            /* border:1px solid black; */
+            width: 100%;
+        }
+
+        #banner>div>img:nth-child(1){
+            /* border:1px solid black; */
+            width: 100%;
+            height: auto;
+        }
+
+
+
+        .second{
+            /* border:1px solid blue; */
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            width: 100%;
+            gap: 10px;
+            
+        }
+
+        .second>div{
+            /* border:1px solid green; */
+            width:100%;
+        }
+
+        .second>div>img{
+            /* border:1px solid green; */
+            width:100%;
+        }
+
+        .icon{
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+        }
+
+        .icon>div{
+            /* border: 1px solid red; */
+            width:90%;
+            height:100%;
+        }
+
+        .icon>div>img{
+            /* border: 1px solid red; */
+            width:100%;
+            height:100%;
+        }
+
+        .menWomKid{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 15px;
+        }
+
+        .menWomKid>div{
+            /* border: 1px solid red; */
+            width:100%;
+            margin: auto;
+            
+        }
+
+        .menWomKid>div>img{
+            /* border: 1px solid blue; */
+            width:99%;
+            margin: auto;   
+        }
+
+        .three{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 15px;
+        }
+
+        .three>div{
+            /* border: 1px solid red; */
+            width:100%;
+            margin: auto;
+            
+        }
+
+        .three>div>img{
+            /* border: 1px solid blue; */
+            width:99%;
+            margin: auto;   
+        }
+
+        .eigth{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 15px;
+        }
+
+        .eigth>div{
+            /* border: 1px solid red; */
+            width:100%;
+            margin: auto;    
+        }
+
+        .eigth>div>img{
+            /* border: 1px solid blue; */
+            width:99%;
+            margin: auto;   
+        }
+
+        .shoes{
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 15px;
+            margin: auto
+        }
+
+        .shoes>div{
+            /* border: 1px solid red; */
+            width:100%;
+            margin: auto;    
+        }
+
+        .shoes>div>img{
+            /* border: 1px solid blue; */
+            width:99%;
+            margin: auto;   
+        }
+
+        .mon{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 15px;
+        }
+
+        .mon>div{
+            /* border: 1px solid red; */
+            width:100%;
+            margin: auto;    
+        }
+
+        .mon>div>img{
+            /* border: 1px solid blue; */
+            width:99%;
+            margin: auto;   
+        }
+
+        .ten{
+            width: 65%;
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            gap: 15px;
+            margin: auto;
+        }
+
+        .ten>div{
+            /* border: 1px solid red; */
+            width:100%;
+            margin: auto;    
+        }
+
+        .ten>div>img{
+            /* border: 1px solid blue; */
+            width:99%;
+            margin: auto;   
+        }
+
+        #footer{
+            width: 100%;
+            height: 400px;
+            background-color: #313f35;
+            margin: auto;
+            margin-top: 5%;
+        }
+
+        .upper{
+            /* border: 1px solid red;; */
+            width: 95%;
+            margin: auto;
+            display: flex;
+            padding-top: 2%;
+            color: white;
+            justify-content: space-between;
+        }
+
+
+
+        .upper>div>p{
+            font-size: 20px;
+            margin-top: 5%;
+        }
+
+        .lower{
+            display: flex;
+            /* border:1px solid red; */
+        }
+
+
+
+
+
+        @media only screen and (max-width: 1100px) {
+        /* Medium Screen  */
+        #head{
+            display: flex;
+            width: 100%;
+            height: 30px;
+            /* border: 1px solid red; */
+            background-color: #313f35;
+            color: #a1a3a2;
+            justify-content: space-between;
+        }
+
+        #head>div:nth-child(1){
+            /* border: 1px solid black; */
+            width: 30%;
+            margin: auto;
+            text-align:center;
+            font-size: 18px;
+        }
+
+        #head>div:nth-child(2){
+            display: flex;
+            /* border: 1px solid black; */
+            width: 50%;
+            margin: auto;
+            text-align: center;
+            font-size: 18px;
+            
+        } 
+
+        #head2>div{
+            width: 100%;;
+            /* border:1px solid red; */
+            margin: auto;
+            
+        }
+
+        #head2>div:nth-child(1){
+            /* border: 1px solid red; */
+            /* width: 10%; */
+            height: 100%;
+
+        }
+
+        #head2>div>div>img:nth-child(1){
+            /* border: 1px solid red; */
+            width:100%;
+            height: 100%;    
+        }
+
+        #head2>div>div:nth-child(2){
+            display: none;
+        }
+
+        #head2>div>div>input{
+            display: none;
+        }
+
+    
+
+        #head2>div>div:nth-child(3){
+            display: flex;
+            border: 1px solid black;
+            width: 30%;
+            height: 60%;
+            font-size: 20px;
+            color: black;
+            text-align: center;
+            margin: 0px; 
+            margin-top: 15px;  
+            justify-content: space-around;
+
+        }
+
+        #head2>div>div>i{
+            /* border: 1px solid red; */
+            width: 8%;
+            height: 0px;
+            margin-top: 2%;
+        }
+        #head2>div>div:nth-child(4){
+            display: flex;
+            border: 1px solid black;
+            width: 10%;
+            height: 50%;
+            font-size: 20px;
+            color: black;
+            text-align: center;
+            margin: 0px; 
+            margin-top: 15px;
+            justify-content: space-around;
+        }
+        #head2>div>div>i{
+            /* border: 1px solid red; */
+            width: 8%;
+            /* height: 10px; */
+            margin-top: 2%;
+        }
+
+        #footer{
+            /* border: 1px solid red; */
+            width: 100%;
+            height: 400px;
+            background-color: #313f35;
+            margin: auto;
+            margin-top: 5%;
+            font-size: 18px;
+        }
+
+        #nav{
+            /* border: 1px solid red; */
+           display: none;
+        }
+      }
+
+      @media only screen and (max-width: 885px) {
+        /* Small Screen  */
+
+        #head{
+            display: flex;
+            width: 100%;
+            height: 30px;
+            /* border: 1px solid red; */
+            background-color: #313f35;
+            color: #a1a3a2;
+            justify-content: space-between;
+        }
+
+        #head>div:nth-child(1){
+            /* border: 1px solid black; */
+            width: 40%;
+            margin: auto;
+            text-align:center;
+            font-size: 15px;
+        }
+
+        #head>div:nth-child(2){
+            display: flex;
+            /* border: 1px solid black; */
+            width: 55%;
+            margin: auto;
+            text-align: center;
+            font-size: 15px;    
+        }
+
+        #head2>div{
+            display: flex;
+            width:80%;
+
+        }
+
+        #head2>div{
+            /* border:1px solid red; */
+            margin: auto;
+            justify-content: space-around;
+            
+        }
+
+        #head2>div:nth-child(1){
+            /* border: 1px solid red; */
+            /* width: 10%; */
+            height: 100%;
+
+        }
+
+        #head2>div>div>img:nth-child(1){
+            /* border: 1px solid red; */
+            width:100%;
+            height: 100%;    
+        }
+
+        #head2>div>div:nth-child(2){
+            /* border: 1px solid red; */
+            width: 40%;
+            height: 100%;
+
+        }
+
+        #head2>div>div>input{
+            border: 1px solid black;
+            width:90%;
+            height: 50%;
+            margin-top: 2%;
+            justify-content: space-around;
+        }
+
+    
+
+        #head2>div>div:nth-child(3){
+            display: flex;
+            border: 1px solid black;
+            width: 35%;
+            height: 30%; 
+            text-align: center;
+            margin: 0px; 
+            margin-top: 15px;
+            font-size: 12px;  
+            justify-content: space-around;
+        }
+
+        #head2>div>div>i{
+            /* border: 1px solid red; */
+            width: 8%;
+            height: 0px;
+            margin-top: 2%;
+        }
+
+        #head2>div>div:nth-child(4){
+            display: flex;
+            border: 1px solid black;
+            width: 15%;
+            height: 30%; 
+            font-size: 15px;
+            text-align: center;
+            margin: 0px; 
+            margin-top: 15px;  
+            justify-content: space-around;
+        }
+        #head2>div>div>i{
+            /* border: 1px solid red; */
+            width: 8%;
+            /* height: 10px; */
+            margin-top: 2%;
+        }
+
+        .icon{
+            grid-template-columns: repeat(3,1fr);
+            /* border: 1px solid red; */
+            margin: auto;
+      }
+
+      .menWomKid{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            gap: 15px;
+        }
+
+        .three{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            gap: 15px;
+        }
+
+        .eigth{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 15px;
+        }
+
+        .shoes{
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 15px;
+            margin: auto
+        }
+
+        #nav{
+            display: none;  
+        }
+
+        #footer{
+            /* border: 1px solid red; */
+            width: 100%;
+            height: 400px;
+            background-color: #313f35;
+            margin: auto;
+            margin-top: 5%;
+            font-size: 10px;
+        }
+
+    }
+
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div id="head">
+            <div>
+                <h4>Rewards | EMS Schools | goEast</h4>
+            </div>
+
+            <div>
+                <h4>Free Ground Shipping over $99 |<h4 style="color: white;">Find a Store | Help</h4></h4>
+            </div>
+        </div>
+
+        <div id="head2">
+            <div>
+            <div>
+                
+                <img src="/image/Screenshot (619).png" alt="error">
+
+            </div>
+
+
+            <div>
+                <i class="fa-solid fa-magnifying-glass"></i> <input type="search" placeholder="Search..">
+            </div>
+
+
+            <div>
+                <i class="fa-regular fa-user"></i><a style="color: black; text-decoration: none;" href="login.html"><h3>My Account & Orders</h3></a>
+            </div>
+
+
+            <div>
+                <i class="fa-solid fa-cart-shopping"></i><a style="color: black; text-decoration: none;" href="cart.html"><h3>Cart</h3></a> 
+
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <!-- top section -->
+
+    <div id="nav">
+
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar">Menu</label>
+
+        <ul>
+            <li><a style="text-decoration: none; color:black; font-size: 16px; font-weight: bold;" href="#">MEN</a>
+
+                <ul>
+                    <li><h5>CLOTHING</h5>
+                        <hr>
+                        <p>Jackets</p>
+                        <p>Down Jackets</p>
+                        <p>Fleece Jackets</p>
+                        <p>Rain Jackets</p>
+                        <p>Snow Jackets</p>
+                        <p>Ski Jackets</p>
+                        <p>Puffer Jackets</p>
+                        <p>Windbreakers</p>
+                        <p>Vests</p>
+                    
+                        <h4>Bottoms</h4>
+                        <p>Pants</p>
+                        <p>Shorts</p>
+                        <p>Cycling Shorts</p>
+                        <p>Hiking Pants</p>
+                        <p>Snow Pants</p>
+                        <p>Swimwear</p>   
+                        </li>
+                </ul>
+            </li>
+
+            <li><a style="text-decoration: none; color:black; font-size: 16px; font-weight: bold;" href="#">WOMEN</a>
+            
+            <ul>
+                <li><h5>CLOTHING</h5>
+                    <hr>
+                    <p>Jackets</p>
+                    <p>Hoodies</p>
+                        <p>Sweaters</p>
+                        <p>Flannels</p>
+                        <p>Vests</p>
+                        <p>Shirts</p>
+                        <p>Tank Tops</p>
+                        <p>Graphic Tees</p>
+                    
+                        <h4>Bottoms</h4>
+                        <p>Pants</p>
+                        <p>Leggings</p>
+                        <p>Capris</p>
+                        <p>Skirts & Dresses</p>
+                        <p>Shorts</p>
+                        <p>Yoga Pants & Shorts</p>   
+                        </li>
+
+                </ul>
+            
+            </li>
+
+            <li><a style="text-decoration: none; color:black; font-size: 16px; font-weight: bold;" href="#">KIDS</a>
+
+                <ul>
+                    <li><h5>CLOTHING</h5>
+                        <hr>
+                        <p>Boy's Clothing</p>
+                        <p>Jackets</p>
+                        <p>Fleece Jackets</p>
+                        <p>Hoodies & Sweatshirts</p>
+                        <p>Pants</p>
+                        <p>Shorts</p>
+                        <p>Underwears</p>
+                        <p>Windbreakers</p>
+                        <p>Vests</p>
+                    
+                        <h4>Girl's Clothing</h4>
+                        <p>Jackets</p>
+                        <p>Hoodies & Sweatshirts</p>
+                        <p>Shirts</p>
+                        <p>Pants and Capris</p>
+                        <p>Snow Pants</p>
+                        <p>Shorts</p>   
+                        </li>
+                </ul>
+            </li>
+
+            <li><a style="text-decoration: none; color:black; font-size: 16px; font-weight: bold;" href="#">FOOTWEAR</a>
+                <ul>
+                    <li><h5>Boots</h5>
+                        <p>Hiking Boots</p>
+                        <p>Casual Boots</p>
+                        <p>Winter Boots</p>
+                        <p>Work Boots</p>
+                        <p>Chukka Boots</p>
+                        <p>Rain Boots</p>
+                        <p>Mountaineering Boots</p>
+                    
+                        <h4>Shoes</h4>
+                        <p>Hiking Shoes</p>
+                        <p>Running Shoes</p>
+                        <p>Cross Training Shoes</p>
+                        <p>Casual Shoes</p>
+                        <p>Boat Shoes</p>
+                        <p>Climbing Shoes</p>
+                        <p>Cycling Shoes</p>  
+                        <p>Water Shoes</p> 
+                        </li>
+                </ul>
+            
+            </li>
+
+            <li><a style="text-decoration: none; color:black; font-size: 16px; font-weight: bold;" href="#">CAMP & HIKE</a>
+                <ul>
+                    <li><h5>Tents and Shelters</h5>
+                        <p>Camping Tents</p>
+                        <p>Backpacking Tents</p>
+                        <p>Footprints & Vestibules</p>
+                        <p>Tent Accessories</p>
+                        <p>Sleeping Pads</p>
+
+                        <h4>Hiking Clothing</h4>
+                        <p>Hiking Jackets</p>
+                        <p>Hiking Hats & Bandanas</p>
+                        <p>Hiking Pants & Shorts</p>
+                        <p>Hiking Shirts</p>
+                        <p>Hiking Socks</p>
+                        <p>Rain Gear</p>
+                        <p>Sunglasses</p>
+
+                        <h4>Camp Furniture</h4> 
+                        <p>Camp Chairs</p>
+                        <p>Hammocks</p>
+                        <p>Tables</p>   
+                        </li>
+                </ul>
+            </li>
+
+            <li><a style="text-decoration: none; color:black; font-size: 16px; font-weight: bold;" href="#">CLIMB</a> 
+                 
+                <ul>
+                    <li><h5>Hardware</h5>
+                        <p>Carabiners</p>
+                        <p>Quickdraws</p>
+                        <p>Protection</p>
+                        <p>Pulleys</p>
+                        <p>Belay & Rappel</p>
+                        <p>Ascenders & Descenders</p>
+                        <p>Underwears</p>
+                        <p>Windbreakers</p>
+                        <p>Work & Rescue</p>   
+                        </li>
+                </ul>
+            </li>
+
+            <li><a style="text-decoration: none; color:black; font-size: 16px; font-weight: bold;" href="#">SNOW</a>
+                <ul>
+                    <li><h5>CLOTHING</h5>
+                        <hr>
+                        <p>Ski Jackets</p>
+                        <p>Snow Pants</p>
+                        <p>Soft Shell Pants</p>
+                        <p>Insulating Mid Layer</p>
+                        <p>Base Layer</p>
+                        <p>Ski Socks</p>
+                          
+                        </li>
+                </ul>
+            </li>
+
+            <li><a style="text-decoration: none; color:black; font-size: 16px; font-weight: bold;" href="#">CYCLE</a>
+        
+                <ul>
+                    <li><h5>Locks</h5>
+                        <p>Seat Bags</p>
+                        <p>Racks Panniers and Cargo Bags</p>
+                        <p>Fenders</p>
+                        <p>Hoodies & Sweatshirts</p>
+                        <p>Hydration Packs</p>
+                        <p>Bottle Cages</p>
+                        <p>Bike Care & Repair</p>   
+                        </li>
+                </ul>
+            </li>
+
+            <li><a style="text-decoration: none; color:black; font-size: 16px; font-weight: bold;" href="#">ACTIVITIES</a>
+            
+                <ul>
+                    <li><h5>Fitness Clothing</h5>
+                        <hr>
+                        <p>Fitness Footwear</p>
+                        <p>Fitness Bags</p>
+                        <p>Yoga Shop</p>
+                        <p>Running Shop</p>
+                        <p>Swim Shop</p>
+                        <p>Skin Protection</p>
+                        <p>Nutrition</p>
+                        <p>Electronics</p>
+                          
+                        </li>
+                </ul>
+            </li>
+
+            <li><a style="text-decoration: none; color:black; font-size: 16px; font-weight: bold;" href="#">BRANDS</a>
+                <ul>
+                    <li><h5>FEATURED BRANDS</h5>
+                        <hr>
+                        <p>Big Agnes</p>
+                        <p>Black Diamond</p>
+                        <p>Carhartt</p>
+                        <p>Columbia</p>
+                        <p>Marmot</p>
+                        <p>Merrell</p>
+                        <p>Osprey</p>
+                        <p>Sorel</p>
+                        <p>Smartwool</p>
+                        <p>The North Face</p>
+                      
+                        </li>
+                </ul>
+            </li>
+
+            <li><a style="text-decoration: none; color:red; font-size: 16px; font-weight: bold;" href="#">SALES & OUTLET</a>
+
+                <ul>
+                    <li> <h3>SALES BY DEPARTMENT</h3>
+                        <hr>
+                        <p>Men's Sale</p>
+                        <p>Women's Sale</p>
+                        <p>Kids' Sale</p>
+                        <p>Equipment Sale</p>
+                        <p>Camp and Hike Sale</p>
+                        <p>Men's Sale</p>
+                        <p>Accessories Sale</p>
+
+                    </li>
+                </ul>
+            
+            
+            </li>
+
+        </ul>
+
+
+    </div>
+
+    <!-- banner -->
+
+    <div id="banner">
+
+        <div>
+            <img src="/image/sales.jpg" alt="error">
+        </div>
+
+
+        <div class="second">
+            <div><img src="/image/Free shipping.jpg" alt="error"></div>
+
+            <div><img src="/image/reward 30.jpg" alt="error"></div>
+            
+            <div><img src="/image/all.jpg" alt="error"></div>
+
+            <div><img src="/image/New Arrival.jpg" alt="error"></div>
+            
+        </div>
+
+
+        <div>
+            <img src="/image/EMSxCotopaxi_Banners_1640x400.jpg" alt="error">
+        </div>
+
+
+        <div class="icon">
+            <div>
+                <img src="/image/camp and hike.jpg" alt="error">
+            </div>
+
+            <div>
+                <img src="/image/snow.jpg" alt="error">
+            </div>
+
+            <div>
+                <img src="/image/travel.jpg" alt="error">
+            </div>
+
+            <div>
+                <img src="/image/paddle.jpg" alt="error">
+            </div>
+
+            <div>
+                <img src="/image/climb.jpg" alt="error">
+            </div>
+
+            <div>
+                <img src="/image/cycle.jpg" alt="error">
+            </div>
+        </div>
+
+
+        <div class="menWomKid">
+            <div>
+                <img src="/image/Mens.jpg" alt="error">
+            </div>
+
+            <div>
+                <img src="/image/Womens.jpg" alt="error">
+            </div>
+
+            <div>
+                <img src="/image/kids.jpg" alt="error">
+            </div>
+        </div>
+
+
+        <div>
+            <img src="/image/camping 40.jpg" alt="error">
+        </div>
+
+
+        <div class="three">
+            <div>
+                <img src="/image/sleeping bag.jpg" alt="erroe">
+            </div>
+
+            <div>
+                <img src="/image/trekking poles.jpg" alt="erroe">
+            </div>
+
+            <div>
+                <img src="/image/tents.jpg" alt="erroe">
+            </div>
+        </div>
+
+
+        <div class="eigth">
+            <div>
+                <img src="/image/tech wick.jpg" alt="error">
+            </div>
+
+            <div>
+                <img src="/image/soft spon.jpg" alt="error">
+            </div>
+
+            <div>
+                <img src="/image/rewards.jpg" alt="error">
+            </div>
+
+            <div>
+                <img src="/image/schools.jpg" alt="error">
+            </div>
+
+            <div>
+                <img src="/image/join us.jpg" alt="error">
+            </div>
+
+            <div>
+                <img src="/image/goeast.jpg" alt="error">
+            </div>
+
+            <div>
+                <img src="/image/kayak.jpg" alt="error">
+            </div>
+
+            <div>
+                <img src="/image/bikes.jpg" alt="error">
+            </div>
+        </div>
+
+
+        <div class="shoes">
+            <div>
+                <img src="/image/hiking shoes.jpg" alt="error">
+            </div>
+
+            <div>
+                <img src="/image/hicking boots.jpg" alt="error">
+            </div>
+
+            <div>
+                <img src="/image/running shoes.jpg" alt="error">
+            </div>
+
+            <div>
+                <img src="/image/casual shoes.jpg" alt="error">
+            </div>
+
+            <div>
+                <img src="/image/casual boots.jpg" alt="error">
+            </div>
+
+            <div>
+                <img src="/image/work boots.jpg" alt="error">
+            </div>
+
+            <div>
+                <img src="/image/shocks.jpg" alt="error">
+            </div>
+
+            <div>
+                <img src="/image/accessories.jpg" alt="error">
+            </div>
+        </div>
+
+
+        <div>
+            <img src="/image/EMS_Insta_Logo.jpg" alt="">
+        </div>
+
+
+        <div class="mon">
+            <div>
+                <img src="/image/A.jpg" alt="error">
+            </div>
+
+            <div>
+                <img src="/image/B.jpg" alt="error">
+            </div>
+
+            <div>
+                <img src="/image/C.jpg" alt="error">
+            </div>
+
+            <div>
+                <img src="/image/D.jpg" alt="error">
+            </div>
+
+            <div>
+                <img src="/image/E.jpg" alt="error">
+            </div>
+
+            <div>
+                <img src="/image/G.jpg" alt="error">
+            </div>
+
+            <div>
+                <img src="/image/F.jpg" alt="error">
+            </div>
+
+            <div>
+                <img src="/image/H.jpg" alt="error">
+            </div>
+        </div>
+
+
+        <div class="ten">
+            <div>
+                <img src="/image/EMS.png" alt="">
+            </div>
+
+            <div>
+                <img src="/image/The_North_Face.png" alt="">
+            </div>
+
+            <div>
+                <img src="/image/Thule.png" alt="">
+            </div>
+
+            <div>
+                <img src="/image/SmartWool.png" alt="">
+            </div>
+
+            <div>
+                <img src="/image/Marmot.png" alt="">
+            </div>
+
+            <div>
+                <img src="/image/Black_Diamond.png" alt="">
+            </div>
+
+            <div>
+                <img src="/image/Osprey.png" alt="">
+            </div>
+
+            <div>
+                <img src="/image/Merrell.png" alt="">
+            </div>
+
+            <div>
+                <img src="/image/Petzl.png" alt="">
+            </div>
+
+            <div>
+                <img src="/image/yeti.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+
+    <div id="footer">
+        <div class="upper">
+
+            <div>
+                <h2>GET TO KNOW US</h2>
+                <p>About Us</p>
+                <p>Affilate Program</p>
+                <p>Careers</p>
+                <p>Partners</p>
+                <p>Expert Advice</p>
+                <p>goEast Community</p>
+            </div>
+
+
+            <div>
+                <h2>IN THE SPOTLIGHT</h2>
+                <p>Reward Program</p>
+                <p>Deals</p>
+                <p>News</p>
+                <p>Outlet & Clearance</p>
+                <p>Shop by Brand</p>
+                <p>Sale</p>
+            </div>
+
+
+            <div>
+                <h2>OUR STORES</h2>
+                <p>Find a Store</p>
+                <p>EMS Schools</p>
+                <p>In Store Rentals</p>
+            </div>
+
+
+            <div>
+                <h2>HELP CENTER</h2>
+                <p>Customer Service</p>
+                <p>Reward Help</p>
+                <p>Shipping</p>
+                <p>Returns</p>
+                <p>California Policy</p>
+                <p>Contact Us</p>
+            </div>
+
+
+            <div>
+                <h2>SIGN UP FOR EMAILS</h2>
+                <input type="email" placeholder="Enter your email address...">
+
+                <p>By signing up you agree to receive promotional <br> emails from EMS, you agree with our terms and <br>conditions and that you have read our privacy<br> policy.</p>
+            </div>
+        </div>
+
+        <hr style="margin-top: 2%;">
+
+        <div class="lower">
+            <div>
+                <i style="color: white; font-size: 40px;" class="fa-brands fa-twitter"></i>
+                <i style="color: white; font-size: 40px; " class="fa-brands fa-instagram"></i>
+                <i style="color: white; font-size: 40px;" class="fa-brands fa-youtube"></i>
+            </div>
+
+            <div>
+                <h3 style="color: white; padding-left: 10%; font-size: 18px;;">Copyright © 2023 Eastern Mountain Sports. All Rights Reserved · Privacy Policy · Terms & Conditions</h3>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    
+</body>
+
+</html>
