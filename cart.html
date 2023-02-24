@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="icon" type="image/x-icon" href="/image/Screenshot (619).png"> 
+    
+
+    <style>
+
+        
+        .products{
+            display: grid;
+            /* border: 1px solid red; */
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+
+        }
+
+        .products > div{
+            /* border: 1px solid red; */
+            width: 80%;
+            margin: auto;
+            height: auto;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+        }
+
+        .products > div > img{
+            width: 100%;
+            height: auto;
+            align-items: center;
+           
+        }
+
+        .products >div > h4,
+        .products >div > h2{
+            text-align: center;
+            color: var(--hoverTextColor);
+            cursor: pointer;
+        }
+
+        .products >div > h2{
+            color: var(--textColor);
+        }
+
+
+        *{
+            font-family: Montserrat-Web, Montserrat, -apple-system, BlinkMacSystemFont, San Francisco, Roboto, Segoe UI, Helvetica Neue, sans-serif; 
+
+            margin: 0px;         
+        }
+    
+        #head{
+            display: flex;
+            width: 100%;
+            height: 30px;
+            /* border: 1px solid red; */
+            background-color: #313f35;
+            color: #a1a3a2;
+            justify-content: space-between;
+        }
+
+        #head>div:nth-child(1){
+            /* border: 1px solid red; */
+            width: 15%;
+            margin: auto;
+            text-align:center;
+            font-size: 15px;
+        }
+
+        #head>div:nth-child(2){
+            display: flex;
+            /* border: 1px solid red; */
+            width: 20%;
+            text-align: center;
+            margin-bottom: 2%;
+            font-size: 15px;
+            margin: auto;
+            justify-content: space-around;
+        }
+
+        #head2{
+            width: 100%;
+            height: 80px;
+            /* border: 1px solid red; */
+            background-color: #edf0ee;
+            
+        }
+
+        #head2>div{
+            display: flex;
+            width:80%;
+
+        }
+
+        #head2>div{
+            margin: auto;
+            justify-content: space-around;
+            
+        }
+
+        #head2>div:nth-child(1){
+            height: 100%;
+
+        }
+
+        #head2>div>div>img:nth-child(1){
+            /* border: 1px solid red; */
+            width:100%;
+            height: 100%;    
+        }
+
+        #head2>div>div:nth-child(2){
+            /* border: 1px solid red; */
+            width: 40%;
+            height: 100%;
+
+        }
+
+        #head2>div>div>input{
+            border: 1px solid black;
+            width:90%;
+            height: 50%;
+            margin-top: 2%;
+            justify-content: space-around;
+        }
+
+    
+
+        #head2>div>div:nth-child(3){
+            display: flex;
+            border: 1px solid black;
+            width: 15%;
+            height: 60%; 
+            text-align: center;
+            margin: 0px; 
+            margin-top: 15px;  
+            justify-content: space-around;
+        }
+
+        #head2>div>div>i{
+            /* border: 1px solid red; */
+            width: 8%;
+            height: 0px;
+            margin-top: 2%;
+        }
+        #head2>div>div:nth-child(4){
+            display: flex;
+            border: 1px solid black;
+            width: 5%;
+            height: 50%;
+            color: black;
+            text-align: center;
+            margin: 0px; 
+            margin-top: 15px;
+            justify-content: space-around;
+        }
+
+        #head2>div>div>i{
+            width: 8%;
+            margin-top: 2%;
+        }
+
+
+
+
+  /* //medium */
+
+        @media only screen and (min-width: 500px) and (max-width: 1100px) {
+            .products{
+            display: grid;
+            /* border: 1px solid red; */
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+
+        }
+
+        #head{
+            display: flex;
+            width: 100%;
+            height: 30px;
+            /* border: 1px solid red; */
+            background-color: #313f35;
+            color: #a1a3a2;
+            justify-content: space-between;
+        }
+
+        #head>div:nth-child(1){
+            /* border: 1px solid black; */
+            width: 30%;
+            margin: auto;
+            text-align:center;
+            font-size: 18px;
+        }
+
+        #head>div:nth-child(2){
+            display: flex;
+            /* border: 1px solid black; */
+            width: 50%;
+            margin: auto;
+            text-align: center;
+            font-size: 18px;
+            
+        } 
+
+        #head2>div{
+            width: 100%;;
+            /* border:1px solid red; */
+            margin: auto;
+            
+        }
+
+        #head2>div:nth-child(1){
+            /* border: 1px solid red; */
+            /* width: 10%; */
+            height: 100%;
+
+        }
+
+        #head2>div>div>img:nth-child(1){
+            /* border: 1px solid red; */
+            width:100%;
+            height: 100%;    
+        }
+
+        #head2>div>div:nth-child(2){
+            display: none;
+        }
+
+        #head2>div>div>input{
+            display: none;
+        }
+
+    
+
+        #head2>div>div:nth-child(3){
+            display: flex;
+            border: 1px solid black;
+            width: 30%;
+            height: 60%;
+            font-size: 20px;
+            color: black;
+            text-align: center;
+            margin: 0px; 
+            margin-top: 15px;  
+            justify-content: space-around;
+
+        }
+
+        #head2>div>div>i{
+            /* border: 1px solid red; */
+            width: 8%;
+            height: 0px;
+            margin-top: 2%;
+        }
+        #head2>div>div:nth-child(4){
+            display: flex;
+            border: 1px solid black;
+            width: 10%;
+            height: 50%;
+            font-size: 20px;
+            color: black;
+            text-align: center;
+            margin: 0px; 
+            margin-top: 15px;
+            justify-content: space-around;
+        }
+        #head2>div>div>i{
+            /* border: 1px solid red; */
+            width: 8%;
+            margin-top: 2%;
+        }
+        
+   
+      }
+
+
+
+      /* Small Screen */
+      @media only screen and (min-width: 320px) and (max-width: 499px) {
+        .products{
+            display: grid;
+            /* border: 1px solid red; */
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 20px;
+
+        }
+
+        #head{
+            display: flex;
+            width: 100%;
+            height: 30px;
+            /* border: 1px solid red; */
+            background-color: #313f35;
+            color: #a1a3a2;
+            justify-content: space-between;
+        }
+
+        #head>div:nth-child(1){
+            display: none;
+        }
+
+        #head>div:nth-child(2){
+            display: none;  
+        }
+
+        #head2>div{
+            display: none;
+
+        }
+
+        #head2>div{
+            display: none;
+            
+        }
+
+        #head2>div:nth-child(1){
+            
+            display: none;
+
+        }
+
+        #head2>div>div>img:nth-child(1){
+            display: none;    
+        }
+
+        #head2>div>div:nth-child(2){
+            display: none;
+
+        }
+
+        #head2>div>div>input{
+            display: none;
+        }
+
+    
+
+        #head2>div>div:nth-child(3){
+            display: none;
+        }
+
+        #head2>div>div>i{
+            display: none;
+        }
+
+        #head2>div>div:nth-child(4){
+            display: none;
+        }
+        #head2>div>div>i{
+            display: none;
+        }
+      }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div id="head">
+            <div>
+                <h4>Rewards | EMS Schools | goEast</h4>
+            </div>
+
+            <div>
+                <h4>Free Ground Shipping over $99 |<h4 style="color: white;">Find a Store | Help</h4></h4>
+            </div>
+        </div>
+
+        <div id="head2">
+            <div>
+            <div>
+                
+                <img src="/image/Screenshot (619).png" alt="error">
+
+            </div>
+
+
+            <div>
+                <i class="fa-solid fa-magnifying-glass"></i> <input type="search" placeholder="Search..">
+            </div>
+
+
+            <div>
+                <i class="fa-regular fa-user"></i><a style="color: black; text-decoration: none;" href="login.html"><h3>My Account & Orders</h3></a>
+            </div>
+
+
+            <div>
+                <i class="fa-solid fa-cart-shopping"></i><a style="color: black; text-decoration: none;" href="cart.html"><h3>Cart</h3></a> 
+
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <div class="products"></div>
+    
+</body>
+
+<script>
+
+// var arr = [
+
+// {
+// image:"https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2066736_002_main.jpg",
+// Name: "EMS Men's Trailhead Long-Sleeve Shirt",
+// price: "48.74",
+// },
+
+// {
+// image:"https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2079373_212_main.jpg",
+// Name: "EMS Men's Lightweight Spring Flanneln",
+// price: "19.97",
+// },
+
+// {
+// image:"https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2086564_606_main.jpg",
+// Name: "VANS Juniors' Blocked Off Blouson Hoodie",
+// price: "41.98",
+// },
+
+// {
+// image:"https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2075405_001_main.jpg",
+// Name: "EMS Men's Ryker Parka",
+// price: "149.98",
+// },
+
+// {
+// image:"https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2074634_001_main.jpg",
+// Name: "EMS Men's Compass 4-Points Pants",
+// price: "32.48",
+// },
+
+
+// {
+// image:"https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2062309_402_main.jpg",
+// Name: "EMS Men's Feather Pack Jacket",
+// price: "119.99",
+// },
+
+// {
+// image:"https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2071415_808_main.jpg",
+// Name: "EMS Men's Vortex Midlayer Insulated Jacket",
+// price: "99.99",
+// },
+
+// {
+// image:"https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/1291393_308_main.jpg",
+// Name: "EMS Light Hiking Socks, 2-Pack",
+// price: "15.00",
+// },
+
+// {
+// image:"https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2067090_003_main.jpg",
+// Name: "OUTDOOR RESEARCH Men's Juneau Beanie",
+// price: "20.00",
+// },
+
+// {
+// image:"https://images.meesho.com/images/products/76066837/telzs_400.jpg",
+// Name: "Versatile Men Caps",
+// price: "22.9",
+// },
+
+// {
+// image:"https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2061102_401_main.jpg",
+// Name: "Relaxed Fabulous Men Cas",
+// price: "98.88",
+// },
+
+// {
+// image:"https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2063135_001_main.jpg",
+// Name: "LEVI'S Men's 514 Straight Fit Advanced Stretch Jeans",
+// price: "69.50",
+// },
+
+// {
+// image:"https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2086564_606_main.jpg",
+// Name: "VANS Juniors' Blocked Off Blouson Hoodie",
+// price: "41.98",
+// },
+
+// {
+// image:"https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2070315_603_main.jpg",
+// Name: "THE NORTH FACE Men’s Campshire Button Down Shirt",
+// price: "87.98",
+// },
+
+// {
+// image:"https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2075210_201_main.jpg",
+// Name: "PRANA Men's Westbrook Flannel Shirt",
+// price: "79.98",
+// },
+
+// {
+// image:"https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/1314717_408_main.jpg",
+// Name: "NRS Men's Extreme Drysuit",
+// price: "795.95",
+// },
+
+// {
+// image:"https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2060094_001_main.jpg",
+// Name: "OSPREY Men's Farpoint Trek 55L Travel Pack",
+// price: "220.00",
+// },
+
+// {
+// image:"https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2026615_001_main.jpg",
+// Name: "GIRO Men's Chrono Sport Cycling Shorts",
+// price: "80.00",
+// },
+
+// {
+// image:"https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2083629_315_main.jpg",
+// Name: "MARMOT Women's Ridgefield Heavyweight Sherpa-Lined Flannel Jacket",
+// price: "120.00",
+// },
+
+// {
+// image:"https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2079532_000_main.jpg",
+// Name: "FISCHER SPORTS OTX Trail Ski Boots",
+// price: "159.00",
+// },
+
+// {
+// image:"https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2083812_003_main.jpg",
+// Name: "EMS Men's Journey Low Waterproof Hiking Shoes",
+// price: "74.99",
+// },
+
+
+
+// {
+// image:"https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2082197_403_main.jpg",
+// Name: "LEVI'S Women's 311 Shaping Skinny Jeans",
+// price: "69.50",
+// },
+
+// {
+// image:"https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2079737_004_alt1.jpg",
+// Name: "PRANA Women's Othello Falls Trench Coat",
+// price: "149.98",
+// },
+
+// {
+// image:"https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2074820_102_main.jpg",
+// Name: "COLUMBIA Women's Sweater Weather Fleece Full Zip Jacket",
+// price: "90.00",
+// },
+
+// {
+// image:"https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2083907_103_main.jpg",
+// Name: "VANS Juniors' Blocked Off Blouson Hoodie",
+// price: "41.98",
+// },
+
+// {
+// image:"https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2062011_001_main.jpg",
+// Name: "EMS Women's Equinox Stretch Ascent Tights",
+// price: "41.99",
+// },
+
+// {
+// image:"https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2065169_101_main.jpg",
+// Name: "STRASSBURG SOCK, Large",
+// price: "39.50",
+// },
+
+// ]
+
+
+let cart = JSON.parse(localStorage.getItem("arr")) || [];
+
+let newArr = [];
+    let maind = document.querySelector(".products");
+
+displaydata(arr)
+
+function displaydata(arr){
+
+    arr.forEach(function(ele){
+
+        let div = document.createElement("div");
+
+        let image = document.createElement("img")
+        image.setAttribute("src",ele.image );
+
+        let name = document.createElement("h2");
+        name.textContent = ele.Name;
+
+        let addButton = document.createElement("button");
+        addButton.textContent = "Buy"
+
+        addButton.addEventListener("click",()=>{
+
+        newArr.push(arr)
+        localStorage.setItem("arr",JSON.stringify(newArr))
+
+        })
+
+
+        let price = document.createElement("h4");
+        price.textContent = `$${ele.price}`;
+
+        div.append(image,name,price, addButton);
+
+        maind.append(div)
+
+        console.log(ele)
+
+    
+
+    })
+
+}
+</script>
+</html>
