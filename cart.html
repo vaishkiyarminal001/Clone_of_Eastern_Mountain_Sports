@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="icon" type="image/x-icon" href="/image/Screenshot (619).png">
+    
+    
+
+    <style>
+
+        *{
+            font-family: Montserrat-Web, Montserrat, -apple-system, BlinkMacSystemFont, San Francisco, Roboto, Segoe UI, Helvetica Neue, sans-serif; 
+
+            margin: 0px;         
+        }
+    
+        #head{
+            display: flex;
+            width: 100%;
+            height: 30px;
+            /* border: 1px solid red; */
+            background-color: #313f35;
+            color: #a1a3a2;
+            justify-content: space-between;
+        }
+
+        #head>div:nth-child(1){
+            /* border: 1px solid red; */
+            width: 15%;
+            margin: auto;
+            text-align:center;
+            font-size: 15px;
+        }
+
+        #head>div:nth-child(2){
+            display: flex;
+            /* border: 1px solid red; */
+            width: 20%;
+            text-align: center;
+            margin-bottom: 2%;
+            font-size: 15px;
+            margin: auto;
+            justify-content: space-around;
+        }
+
+        #head2{
+            width: 100%;
+            height: 80px;
+            /* border: 1px solid red; */
+            background-color: #edf0ee;
+            
+        }
+
+        #head2>div{
+            display: flex;
+            width:80%;
+
+        }
+
+        #head2>div{
+            margin: auto;
+            justify-content: space-around;
+            
+        }
+
+        #head2>div:nth-child(1){
+            height: 100%;
+
+        }
+
+        #head2>div>div>img:nth-child(1){
+            /* border: 1px solid red; */
+            width:100%;
+            height: 100%;    
+        }
+
+        #head2>div>div:nth-child(2){
+            /* border: 1px solid red; */
+            width: 40%;
+            height: 100%;
+
+        }
+
+        #head2>div>div>input{
+            border: 1px solid black;
+            width:90%;
+            height: 50%;
+            margin-top: 2%;
+            justify-content: space-around;
+        }
+
+    
+
+        #head2>div>div:nth-child(3){
+            display: flex;
+            border: 1px solid black;
+            width: 15%;
+            height: 60%; 
+            text-align: center;
+            margin: 0px; 
+            margin-top: 15px;  
+            justify-content: space-around;
+        }
+
+        #head2>div>div>i{
+            /* border: 1px solid red; */
+            width: 8%;
+            height: 0px;
+            margin-top: 2%;
+        }
+        #head2>div>div:nth-child(4){
+            display: flex;
+            border: 1px solid black;
+            width: 5%;
+            height: 50%;
+            color: black;
+            text-align: center;
+            margin: 0px; 
+            margin-top: 15px;
+            justify-content: space-around;
+        }
+
+        #head2>div>div>i{
+            width: 8%;
+            margin-top: 2%;
+        }
+
+        .main-scroll-div{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+            width: 90%;
+            margin: auto;
+            margin-top: 5%;
+            /* border: 1px solid red; */
+            /* background-color: #1a2e15; */
+        }
+
+        .cover{
+            position: relative;
+            width: 90%;
+            height: 50%;
+            /* border: 1px solid red; */
+        }
+
+        .cover::before{
+            position: absolute;
+            content: "";
+            right: 0;
+            top: 0;
+            z-index: 99;
+            height: 100%;
+            width: 150px;
+            background-image: linear-gradient(9-0deg, white, transparent);
+        }
+
+        .cover::after{
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            z-index: 99;
+            height: 100%;
+            width: 150px;
+            background-image: linear-gradient(90deg, white, transparent);
+        }
+
+        .scroll-image{
+           width: 100%;
+           height: auto;
+           margin: auto;
+           display: flex;
+           justify-content: left;
+           align-items: center;
+           overflow: auto;
+           position: relative;
+           scroll-behavior: smooth;
+        }
+
+        .child{
+            border:1px solid white;
+            min-width: 600px;
+            height: 450px;
+            margin: 1px 10px;
+            cursor: pointer;
+            overflow: hidden;
+        }
+
+        .scroll-image::-webkit-scrollbar{
+            -webkit-appearance: none;
+
+        }
+
+        .child-image{
+            width: 100%;
+            height: 100%;
+            /* empty-cells: inherit; */
+
+        }
+
+        .icon{
+            color: #869643;
+            background-color: white;
+            font-size: 20px;
+            outline: none;
+            border: none;
+            padding: opx 20px;
+            cursor: pointer;
+        }
+
+        #cart{
+            
+            text-align: center;
+            margin-top: 5%;
+        }
+
+        #cart>div{
+            width: 20%;
+            /* border: 1px solid red; */
+            margin: auto;
+
+        }
+
+
+
+
+  /* //medium */
+
+        @media only screen and (min-width: 500px) and (max-width: 1100px) {
+            .products{
+            display: grid;
+            /* border: 1px solid red; */
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+
+        }
+
+        #head{
+            display: flex;
+            width: 100%;
+            height: 30px;
+            /* border: 1px solid red; */
+            background-color: #313f35;
+            color: #a1a3a2;
+            justify-content: space-between;
+        }
+
+        #head>div:nth-child(1){
+            /* border: 1px solid black; */
+            width: 30%;
+            margin: auto;
+            text-align:center;
+            font-size: 18px;
+        }
+
+        #head>div:nth-child(2){
+            display: flex;
+            /* border: 1px solid black; */
+            width: 50%;
+            margin: auto;
+            text-align: center;
+            font-size: 18px;
+            
+        } 
+
+        #head2>div{
+            width: 100%;;
+            /* border:1px solid red; */
+            margin: auto;
+            
+        }
+
+        #head2>div:nth-child(1){
+            /* border: 1px solid red; */
+            /* width: 10%; */
+            height: 100%;
+
+        }
+
+        #head2>div>div>img:nth-child(1){
+            /* border: 1px solid red; */
+            width:100%;
+            height: 100%;    
+        }
+
+        #head2>div>div:nth-child(2){
+            display: none;
+        }
+
+        #head2>div>div>input{
+            display: none;
+        }
+
+    
+
+        #head2>div>div:nth-child(3){
+            display: flex;
+            border: 1px solid black;
+            width: 30%;
+            height: 60%;
+            font-size: 20px;
+            color: black;
+            text-align: center;
+            margin: 0px; 
+            margin-top: 15px;  
+            justify-content: space-around;
+
+        }
+
+        #head2>div>div>i{
+            /* border: 1px solid red; */
+            width: 8%;
+            height: 0px;
+            margin-top: 2%;
+        }
+        #head2>div>div:nth-child(4){
+            display: flex;
+            border: 1px solid black;
+            width: 10%;
+            height: 50%;
+            font-size: 20px;
+            color: black;
+            text-align: center;
+            margin: 0px; 
+            margin-top: 15px;
+            justify-content: space-around;
+        }
+        #head2>div>div>i{
+            /* border: 1px solid red; */
+            width: 8%;
+            margin-top: 2%;
+        }
+        
+   
+      }
+
+
+
+      /* Small Screen */
+      @media only screen and (min-width: 320px) and (max-width: 499px) {
+        .products{
+            display: grid;
+            /* border: 1px solid red; */
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 20px;
+
+        }
+
+        #head{
+            display: flex;
+            width: 100%;
+            height: 30px;
+            /* border: 1px solid red; */
+            background-color: #313f35;
+            color: #a1a3a2;
+            justify-content: space-between;
+        }
+
+        #head>div:nth-child(1){
+            display: none;
+        }
+
+        #head>div:nth-child(2){
+            display: none;  
+        }
+
+        #head2>div{
+            display: none;
+
+        }
+
+        #head2>div{
+            display: none;
+            
+        }
+
+        #head2>div:nth-child(1){
+            
+            display: none;
+
+        }
+
+        #head2>div>div>img:nth-child(1){
+            display: none;    
+        }
+
+        #head2>div>div:nth-child(2){
+            display: none;
+
+        }
+
+        #head2>div>div>input{
+            display: none;
+        }
+
+    
+
+        #head2>div>div:nth-child(3){
+            display: none;
+        }
+
+        #head2>div>div>i{
+            display: none;
+        }
+
+        #head2>div>div:nth-child(4){
+            display: none;
+        }
+        #head2>div>div>i{
+            display: none;
+        }
+      }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div id="head">
+            <div>
+                <h4>Rewards | EMS Schools | goEast</h4>
+            </div>
+
+            <div>
+                <h4>Free Ground Shipping over $99 |<h4 style="color: white;">Find a Store | Help</h4></h4>
+            </div>
+        </div>
+
+        <div id="head2">
+            <div>
+            <div>
+                
+                <img src="/image/Screenshot (619).png" alt="error">
+
+            </div>
+
+
+            <div>
+                <i class="fa-solid fa-magnifying-glass"></i> <input type="search" placeholder="Search..">
+            </div>
+
+
+            <div>
+                <i class="fa-regular fa-user"></i><a style="color: black; text-decoration: none;" href="login.html"><h3>My Account & Orders</h3></a>
+            </div>
+
+
+            <div>
+                <i class="fa-solid fa-cart-shopping"></i><a style="color: black; text-decoration: none;" href="cart.html"><h3>Cart</h3></a> 
+
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <div id="cart">
+        <div><h2>Your shopping cart is empty.</h2></div>
+        
+    </div>
+
+
+    <div class="main-scroll-div">
+        <div>
+            <button class="icon" onclick="scrolll()"> <i class="fas fa-angle-double-left"></i></button>
+        </div>
+
+
+
+        <div class="cover">
+            <div class="scroll-image">
+
+                <div class="child"><img class="child-image" src="https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2066736_002_main.jpg" alt="error"></div>
+
+                <div class="child"><img class="child-image" src="https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2079373_212_main.jpg" alt="error"></div>
+
+                <div class="child"><img class="child-image" src="https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2086564_606_main.jpg" alt="error"></div>
+
+                <div class="child"><img class="child-image" src="https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2075405_001_main.jpg" alt="error"></div>
+
+                <div class="child"><img class="child-image" src="https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2062309_402_main.jpg" alt="error"></div>
+
+                <div class="child"><img class="child-image" src="https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/1291393_308_main.jpg" alt="error"></div>
+            </div>
+        </div>
+
+        <div>
+            <button class="icon" onclick="scrollr()"> <i class="fas fa-angle-double-right"></i></button>
+        </div>
+    </div>
+
+    
+</body>
+
+<script>
+
+    function scrolll(){
+        var left = document.querySelector(".scroll-image");
+        left.scrollBy(350,0)
+
+    }
+
+    function scrollr(){
+        var right = document.querySelector(".scroll-image");
+        right.scrollBy(-350,0)
+
+    }
+
+
+
+</script>
+</html>
