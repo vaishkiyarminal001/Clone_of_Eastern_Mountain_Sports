@@ -8,47 +8,11 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="icon" type="image/x-icon" href="/image/Screenshot (619).png"> 
+    <link rel="icon" type="image/x-icon" href="/image/Screenshot (619).png">
+    
     
 
     <style>
-
-        
-        .products{
-            display: grid;
-            /* border: 1px solid red; */
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: 20px;
-
-        }
-
-        .products > div{
-            /* border: 1px solid red; */
-            width: 80%;
-            margin: auto;
-            height: auto;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
-        }
-
-        .products > div > img{
-            width: 100%;
-            height: auto;
-            align-items: center;
-           
-        }
-
-        .products >div > h4,
-        .products >div > h2{
-            text-align: center;
-            color: var(--hoverTextColor);
-            cursor: pointer;
-        }
-
-        .products >div > h2{
-            color: var(--textColor);
-        }
-
 
         *{
             font-family: Montserrat-Web, Montserrat, -apple-system, BlinkMacSystemFont, San Francisco, Roboto, Segoe UI, Helvetica Neue, sans-serif; 
@@ -165,6 +129,103 @@
         #head2>div>div>i{
             width: 8%;
             margin-top: 2%;
+        }
+
+        .main-scroll-div{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+            width: 90%;
+            margin: auto;
+            margin-top: 5%;
+            /* border: 1px solid red; */
+            /* background-color: #1a2e15; */
+        }
+
+        .cover{
+            position: relative;
+            width: 90%;
+            height: 50%;
+            /* border: 1px solid red; */
+        }
+
+        .cover::before{
+            position: absolute;
+            content: "";
+            right: 0;
+            top: 0;
+            z-index: 99;
+            height: 100%;
+            width: 150px;
+            background-image: linear-gradient(9-0deg, white, transparent);
+        }
+
+        .cover::after{
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            z-index: 99;
+            height: 100%;
+            width: 150px;
+            background-image: linear-gradient(90deg, white, transparent);
+        }
+
+        .scroll-image{
+           width: 100%;
+           height: auto;
+           margin: auto;
+           display: flex;
+           justify-content: left;
+           align-items: center;
+           overflow: auto;
+           position: relative;
+           scroll-behavior: smooth;
+        }
+
+        .child{
+            border:1px solid white;
+            min-width: 600px;
+            height: 450px;
+            margin: 1px 10px;
+            cursor: pointer;
+            overflow: hidden;
+        }
+
+        .scroll-image::-webkit-scrollbar{
+            -webkit-appearance: none;
+
+        }
+
+        .child-image{
+            width: 100%;
+            height: 100%;
+            /* empty-cells: inherit; */
+
+        }
+
+        .icon{
+            color: #869643;
+            background-color: white;
+            font-size: 20px;
+            outline: none;
+            border: none;
+            padding: opx 20px;
+            cursor: pointer;
+        }
+
+        #cart{
+            
+            text-align: center;
+            margin-top: 5%;
+        }
+
+        #cart>div{
+            width: 20%;
+            /* border: 1px solid red; */
+            margin: auto;
+
         }
 
 
@@ -399,225 +460,59 @@
         </div>
     </header>
 
-    <div class="products"></div>
+    <div id="cart">
+        <div><h2>Your shopping cart is empty.</h2></div>
+        
+    </div>
+
+
+    <div class="main-scroll-div">
+        <div>
+            <button class="icon" onclick="scrolll()"> <i class="fas fa-angle-double-left"></i></button>
+        </div>
+
+
+
+        <div class="cover">
+            <div class="scroll-image">
+
+                <div class="child"><img class="child-image" src="https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2066736_002_main.jpg" alt="error"></div>
+
+                <div class="child"><img class="child-image" src="https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2079373_212_main.jpg" alt="error"></div>
+
+                <div class="child"><img class="child-image" src="https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2086564_606_main.jpg" alt="error"></div>
+
+                <div class="child"><img class="child-image" src="https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2075405_001_main.jpg" alt="error"></div>
+
+                <div class="child"><img class="child-image" src="https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2062309_402_main.jpg" alt="error"></div>
+
+                <div class="child"><img class="child-image" src="https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/1291393_308_main.jpg" alt="error"></div>
+            </div>
+        </div>
+
+        <div>
+            <button class="icon" onclick="scrollr()"> <i class="fas fa-angle-double-right"></i></button>
+        </div>
+    </div>
+
     
 </body>
 
 <script>
 
-// var arr = [
+    function scrolll(){
+        var left = document.querySelector(".scroll-image");
+        left.scrollBy(350,0)
 
-// {
-// image:"https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2066736_002_main.jpg",
-// Name: "EMS Men's Trailhead Long-Sleeve Shirt",
-// price: "48.74",
-// },
+    }
 
-// {
-// image:"https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2079373_212_main.jpg",
-// Name: "EMS Men's Lightweight Spring Flanneln",
-// price: "19.97",
-// },
+    function scrollr(){
+        var right = document.querySelector(".scroll-image");
+        right.scrollBy(-350,0)
 
-// {
-// image:"https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2086564_606_main.jpg",
-// Name: "VANS Juniors' Blocked Off Blouson Hoodie",
-// price: "41.98",
-// },
-
-// {
-// image:"https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2075405_001_main.jpg",
-// Name: "EMS Men's Ryker Parka",
-// price: "149.98",
-// },
-
-// {
-// image:"https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2074634_001_main.jpg",
-// Name: "EMS Men's Compass 4-Points Pants",
-// price: "32.48",
-// },
-
-
-// {
-// image:"https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2062309_402_main.jpg",
-// Name: "EMS Men's Feather Pack Jacket",
-// price: "119.99",
-// },
-
-// {
-// image:"https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2071415_808_main.jpg",
-// Name: "EMS Men's Vortex Midlayer Insulated Jacket",
-// price: "99.99",
-// },
-
-// {
-// image:"https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/1291393_308_main.jpg",
-// Name: "EMS Light Hiking Socks, 2-Pack",
-// price: "15.00",
-// },
-
-// {
-// image:"https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2067090_003_main.jpg",
-// Name: "OUTDOOR RESEARCH Men's Juneau Beanie",
-// price: "20.00",
-// },
-
-// {
-// image:"https://images.meesho.com/images/products/76066837/telzs_400.jpg",
-// Name: "Versatile Men Caps",
-// price: "22.9",
-// },
-
-// {
-// image:"https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2061102_401_main.jpg",
-// Name: "Relaxed Fabulous Men Cas",
-// price: "98.88",
-// },
-
-// {
-// image:"https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2063135_001_main.jpg",
-// Name: "LEVI'S Men's 514 Straight Fit Advanced Stretch Jeans",
-// price: "69.50",
-// },
-
-// {
-// image:"https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2086564_606_main.jpg",
-// Name: "VANS Juniors' Blocked Off Blouson Hoodie",
-// price: "41.98",
-// },
-
-// {
-// image:"https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2070315_603_main.jpg",
-// Name: "THE NORTH FACE Men’s Campshire Button Down Shirt",
-// price: "87.98",
-// },
-
-// {
-// image:"https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2075210_201_main.jpg",
-// Name: "PRANA Men's Westbrook Flannel Shirt",
-// price: "79.98",
-// },
-
-// {
-// image:"https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/1314717_408_main.jpg",
-// Name: "NRS Men's Extreme Drysuit",
-// price: "795.95",
-// },
-
-// {
-// image:"https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2060094_001_main.jpg",
-// Name: "OSPREY Men's Farpoint Trek 55L Travel Pack",
-// price: "220.00",
-// },
-
-// {
-// image:"https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2026615_001_main.jpg",
-// Name: "GIRO Men's Chrono Sport Cycling Shorts",
-// price: "80.00",
-// },
-
-// {
-// image:"https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2083629_315_main.jpg",
-// Name: "MARMOT Women's Ridgefield Heavyweight Sherpa-Lined Flannel Jacket",
-// price: "120.00",
-// },
-
-// {
-// image:"https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2079532_000_main.jpg",
-// Name: "FISCHER SPORTS OTX Trail Ski Boots",
-// price: "159.00",
-// },
-
-// {
-// image:"https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2083812_003_main.jpg",
-// Name: "EMS Men's Journey Low Waterproof Hiking Shoes",
-// price: "74.99",
-// },
+    }
 
 
 
-// {
-// image:"https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2082197_403_main.jpg",
-// Name: "LEVI'S Women's 311 Shaping Skinny Jeans",
-// price: "69.50",
-// },
-
-// {
-// image:"https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2079737_004_alt1.jpg",
-// Name: "PRANA Women's Othello Falls Trench Coat",
-// price: "149.98",
-// },
-
-// {
-// image:"https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2074820_102_main.jpg",
-// Name: "COLUMBIA Women's Sweater Weather Fleece Full Zip Jacket",
-// price: "90.00",
-// },
-
-// {
-// image:"https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2083907_103_main.jpg",
-// Name: "VANS Juniors' Blocked Off Blouson Hoodie",
-// price: "41.98",
-// },
-
-// {
-// image:"https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2062011_001_main.jpg",
-// Name: "EMS Women's Equinox Stretch Ascent Tights",
-// price: "41.99",
-// },
-
-// {
-// image:"https://res.cloudinary.com/eastern/image/upload/w_1000,q_auto,f_auto/2065169_101_main.jpg",
-// Name: "STRASSBURG SOCK, Large",
-// price: "39.50",
-// },
-
-// ]
-
-
-let cart = JSON.parse(localStorage.getItem("arr")) || [];
-
-let newArr = [];
-    let maind = document.querySelector(".products");
-
-displaydata(arr)
-
-function displaydata(arr){
-
-    arr.forEach(function(ele){
-
-        let div = document.createElement("div");
-
-        let image = document.createElement("img")
-        image.setAttribute("src",ele.image );
-
-        let name = document.createElement("h2");
-        name.textContent = ele.Name;
-
-        let addButton = document.createElement("button");
-        addButton.textContent = "Buy"
-
-        addButton.addEventListener("click",()=>{
-
-        newArr.push(arr)
-        localStorage.setItem("arr",JSON.stringify(newArr))
-
-        })
-
-
-        let price = document.createElement("h4");
-        price.textContent = `$${ele.price}`;
-
-        div.append(image,name,price, addButton);
-
-        maind.append(div)
-
-        console.log(ele)
-
-    
-
-    })
-
-}
 </script>
 </html>
